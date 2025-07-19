@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import {
   Container,
@@ -35,15 +34,23 @@ function App() {
 
   return (
     <div style={{ backgroundColor: "#f8f9fa", minHeight: "100vh" }}>
-      <Navbar bg="light" expand="lg" className="shadow-sm py-3">
+      <Container className="text-center py-4">
+        <img
+          src="https://via.placeholder.com/80"
+          alt="Logo"
+          className="mb-2"
+        />
+        <h1 className="fw-bold">Judul Website</h1>
+      </Container>
+
+      <Navbar bg="light" expand="lg" className="shadow-sm">
         <Container>
-          <Navbar.Brand className="fw-bold text-primary fs-4">Logo</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link className="fw-semibold">HOME</Nav.Link>
-              <Nav.Link className="fw-semibold">ABOUT</Nav.Link>
-              <Nav.Link className="fw-semibold">CONTACT US</Nav.Link>
+            <Nav className="mx-auto">
+              <Nav.Link className="fw-semibold mx-3">HOME</Nav.Link>
+              <Nav.Link className="fw-semibold mx-3">ABOUT</Nav.Link>
+              <Nav.Link className="fw-semibold mx-3">CONTACT US</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
